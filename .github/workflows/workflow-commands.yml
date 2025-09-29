@@ -12,3 +12,8 @@ jobs:
             echo "MSG 1"
             echo "MSG 1"
             echo "::endgroup::"
+      - name: Adding variable
+        run: |
+             echo "MY_VAL=Hello" >> $GITHUB_ENV 
+      - name: Log Variable
+        run: echo $MY_VAL
